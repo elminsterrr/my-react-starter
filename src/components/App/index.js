@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.css';
 
-// import GuessEngine from '../GuessEngine';
+import TestComponent from '../TestComponent';
 
 const App = () => (
   <div className="App-container">
     <p>The App</p>
+    <TestComponent />
   </div>
 );
 
