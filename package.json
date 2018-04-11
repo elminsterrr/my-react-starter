@@ -21,5 +21,17 @@
     "eslint": "^4.16.0",
     "eslint-config-callstack-io": "^1.1.0",
     "jest-cli": "^20.0.4"
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elminsterrr/my-react-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elminsterrr/my-react-starter/issues"
+  },
+  "homepage": "https://github.com/elminsterrr/my-react-starter#readme"
 }

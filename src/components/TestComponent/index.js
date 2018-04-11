@@ -14,7 +14,7 @@ class TestComponent extends Component {
     axios
       .get('http://localhost:3001/')
       .then(response => {
-        console.log(response);
+        console.log(response.data);
         this.setState({ result: response.data });
       })
       .catch(error => {
@@ -22,8 +22,25 @@ class TestComponent extends Component {
       });
   }
 
+  handleTestButton() {
+    axios
+      .post('http://localhost:3001/', {
+        test: 'Testing post...',
+      })
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+
   render() {
-    return <div />;
+    return (
+      <div>
+        <button onClick={() => this.handleTestButton()}>Test</button>
+      </div>
+    );
   }
 }
 
